@@ -3334,10 +3334,22 @@
 		)
 	)
 	(junction
+		(at 209.55 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ab3309f-7930-4892-8a74-824ed2470796")
+	)
+	(junction
 		(at 187.96 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "223c40a8-73b9-492e-ab82-47593ec0e87e")
+	)
+	(junction
+		(at 224.79 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e331afd-709b-4bde-b72a-6e3041ca4644")
 	)
 	(junction
 		(at 180.34 72.39)
@@ -3356,6 +3368,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6cb15d2c-7621-4bf4-8566-3b1ccbafd5e2")
+	)
+	(junction
+		(at 217.17 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8cae839f-c1c3-4233-ad1b-02838934f557")
 	)
 	(junction
 		(at 83.82 96.52)
@@ -3531,6 +3549,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 72.39) (xy 217.17 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "490b007f-a565-418f-ba83-4721b592529d")
+	)
+	(wire
+		(pts
 			(xy 114.3 152.4) (xy 114.3 104.14)
 		)
 		(stroke
@@ -3691,6 +3719,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 58.42) (xy 224.79 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88ed7273-02dd-4609-bc96-4cf872bb4e6f")
+	)
+	(wire
+		(pts
 			(xy 151.13 128.27) (xy 127 128.27)
 		)
 		(stroke
@@ -3791,6 +3829,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 58.42) (xy 209.55 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e88ca313-c704-44e2-a7bf-9e8d9d72981b")
+	)
+	(wire
+		(pts
 			(xy 132.08 129.54) (xy 132.08 139.7)
 		)
 		(stroke
@@ -3831,6 +3879,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 66.04) (xy 217.17 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7e9e1bd-a698-4ef3-a9ad-c788e2945b58")
+	)
+	(wire
+		(pts
 			(xy 152.4 114.3) (xy 152.4 129.54)
 		)
 		(stroke
@@ -3839,9 +3897,19 @@
 		)
 		(uuid "fa492bc2-a2a9-43c7-8fd7-671d5f06e1f5")
 	)
+	(text "Circuito de regulagem \n12v -> 3.3v"
+		(exclude_from_sim no)
+		(at 226.822 48.514 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6931a847-1ac4-49ba-851a-178ec4478069")
+	)
 	(text "Circuito de regulagem \n12v -> 5v"
 		(exclude_from_sim no)
-		(at 188.976 47.244 0)
+		(at 189.992 48.514 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4490,6 +4558,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 220.98 72.39 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6aadb020-97b6-4481-9676-00ec2eaf1536")
+		(property "Reference" "C5"
+			(at 220.98 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C"
+			(at 220.98 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm"
+			(at 224.79 73.3552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 220.98 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f14a4870-be99-4008-b088-70e1a04c1a5a")
+		)
+		(pin "1"
+			(uuid "00ff9baa-63cf-4ce5-a8c3-06beb42dce87")
+		)
+		(instances
+			(project "fechadura_eletronica"
+				(path "/713915d2-744a-4423-8dcc-c9aa1cefff80"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 73.66 96.52 90)
 		(mirror x)
@@ -4629,6 +4765,75 @@
 			(project "fechadura_eletronica"
 				(path "/713915d2-744a-4423-8dcc-c9aa1cefff80"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 213.36 72.39 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73cecffa-3ee3-479a-bd74-33d094b6de70")
+		(property "Reference" "C4"
+			(at 213.36 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C"
+			(at 213.36 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm"
+			(at 217.17 73.3552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 213.36 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ac93004-e722-45ae-8fe0-c5eae734e051")
+		)
+		(pin "1"
+			(uuid "a8fec738-28ef-4702-83a4-fd5db0109c4b")
+		)
+		(instances
+			(project "fechadura_eletronica"
+				(path "/713915d2-744a-4423-8dcc-c9aa1cefff80"
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -5237,6 +5442,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 224.79 58.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0bbebbd-2cb0-461f-b452-8f48061e3ebd")
+		(property "Reference" "#PWR020"
+			(at 220.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 228.6 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 224.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a0d21a66-d133-4428-8bd1-9daa7f8dd83a")
+		)
+		(instances
+			(project "fechadura_eletronica"
+				(path "/713915d2-744a-4423-8dcc-c9aa1cefff80"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x08_Socket")
 		(at 132.08 144.78 90)
 		(mirror x)
@@ -5318,6 +5590,78 @@
 			(project "fechadura_eletronica"
 				(path "/713915d2-744a-4423-8dcc-c9aa1cefff80"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:LM7805_TO220")
+		(at 217.17 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cba8faac-721e-4d4d-826d-50d4be493641")
+		(property "Reference" "U3"
+			(at 217.17 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LD1117S33TR_SOT223"
+			(at 217.17 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 217.17 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
+			(at 217.17 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
+			(at 217.17 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9b24e9fa-020a-4f7a-8dee-c93a324d1e85")
+		)
+		(pin "3"
+			(uuid "c0436d3a-80a9-4676-99d2-781a73597c80")
+		)
+		(pin "1"
+			(uuid "c589cc31-c4ee-446d-8129-f741ff1caa60")
+		)
+		(instances
+			(project "fechadura_eletronica"
+				(path "/713915d2-744a-4423-8dcc-c9aa1cefff80"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -5732,6 +6076,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 217.17 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da91db32-365a-47ce-b927-c8002f17f6af")
+		(property "Reference" "#PWR019"
+			(at 217.17 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 217.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 217.17 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6aea67d2-bbcd-4ed5-a00f-a2918d476fc9")
+		)
+		(instances
+			(project "fechadura_eletronica"
+				(path "/713915d2-744a-4423-8dcc-c9aa1cefff80"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Linear:LM7805_TO220")
 		(at 180.34 58.42 0)
 		(mirror y)
@@ -6069,6 +6479,73 @@
 			(project "fechadura_eletronica"
 				(path "/713915d2-744a-4423-8dcc-c9aa1cefff80"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 209.55 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc2213a7-a2a2-4eaf-8711-c58a89a95557")
+		(property "Reference" "#PWR018"
+			(at 213.36 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 205.74 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 209.55 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d4b0822-27e1-46a3-b43e-4c207c446261")
+		)
+		(instances
+			(project "fechadura_eletronica"
+				(path "/713915d2-744a-4423-8dcc-c9aa1cefff80"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
